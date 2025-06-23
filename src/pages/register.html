@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <a href="home.html">กลับหน้าแรก</a>
+    <div class="register">
+        <div class="form-container">
+            <div class="form">
+                <div class="username">
+                    <span>
+                        ชื่อผู้ใช้
+                    </span>
+                    <input type="text" placeholder="ชื่อผู้ใช้" name="username"><br>
+                </div>
+                <div class="password-container">
+                    <span>
+                        รหัสผ่าน
+                    </span>
+                    <div class="password-box">
+                        <input type="password" placeholder="รหัสผ่าน" name="password" class="password-input">
+                        <i class="fa-solid toggle-password fa-eye-slash"></i>
+                    </div>
+                </div>
+                <div class="password-container">
+                    <span>
+                        ยืนยันรหัสผ่าน
+                    </span>
+                    <div class="password-box">
+                        <input type="password" placeholder="ยืนยันรหัสผ่าน" name="comfirmPassword" class="password-input"><br>
+                        <i class="fa-solid toggle-password fa-eye-slash"></i>
+                    </div>
+                </div>
+                <div id="message" class="message"></div>
+                <button class="submit" onclick="submitData()">สมัคร</button>
+            </div>
+        </div>
+    </div>
+    <script src="register.js"></script>
+    <script src="https://kit.fontawesome.com/1c2a748935.js" crossorigin="anonymous"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</body>
+</html>
