@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body {
+    background-color:lightblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.logo, .btn-nav {
+    &:hover {
+        cursor: pointer;
+    }
+}
