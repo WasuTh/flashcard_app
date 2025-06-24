@@ -1,16 +1,22 @@
-import { useState } from 'react'
-import Navbar from './components/navbar'
 import './App.css'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/navbar'
+import Home from './pages/home'
+import Login from './pages/login'
+import Register from './pages/register'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+
     <Navbar></Navbar>
-      <div className='text-red-500'>
-        hello flashcard
-      </div>
+    <Routes>
+      <Route path='/' element={<Home />}></Route>
+      <Route path='/login' element={<Login />}></Route>
+      <Route path='/register' element={<Register />}></Route>
+    </Routes>
+
     </>
   )
 }
